@@ -16,5 +16,18 @@ The data frames were assigned to variable names along with the columns :
 -  x_test: It contains 561 columns representing recorded features test data
 -  y_test: It contains 1 column representing training labels 
 
-1. Merges the training and the test sets to create on data set
+1. Merges the training and the test sets to create one data set:
+- training data (x_train) and training labels (y_train) are merged with cbind to obtain train_bind
+- train_bind and the training subjects IDs (subject) are merged with cbind to obtain train_bind_subject
+- test data (x_train) and test labels (y_train) are merged with cbind to obtain test_bind
+- test_bind and the test subjects IDs (subject) are merged with cbind to obtain test_bind_subject
+- train_bind_subject and test_bind_subject are merged together with rbind to create one final data set called merged_data
 
+2. Extracts only the measurements on the mean and standard deviation for each measurement:
+mean_std is created by subsetting merged_data by extracting the target features: the estmated mean (variable containing "mean" in its label) and estimated standard deviation(variable cotaining "std in its label) and by selecting the columns indicating the subjects ("subject") and the activities ("ActId")
+
+3. Uses descriptive activity names to name the activities in the data set:
+
+
+4. Appropriately labels the data set with descriptive variable names
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
