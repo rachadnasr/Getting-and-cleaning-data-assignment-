@@ -18,7 +18,7 @@ R script that contains the code used for downloading and unzipping the data obta
 4. Appropriately labels the data set with descriptive activity names.
 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-## tidy_data.txt: 
+## TidyData.txt: 
 It contains the tidy data exported into a text file
 
 ## CodeBook.md: 
