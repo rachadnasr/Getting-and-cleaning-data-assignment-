@@ -16,8 +16,8 @@ The data frames were assigned to variable names along with the columns :
 -  x_test: It contains 561 columns representing recorded features test data
 -  y_test: It contains 1 column representing training labels 
 
-1. Merges the training and the test sets to create one data set:
-2. 
+'''1. Merges the training and the test sets to create one data set:
+ 
 - training data (x_train) and training labels (y_train) are merged with cbind to obtain train_bind
 - train_bind and the training subjects IDs (subject) are merged with cbind to obtain train_bind_subject
 - test data (x_train) and test labels (y_train) are merged with cbind to obtain test_bind
