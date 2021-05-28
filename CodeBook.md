@@ -27,7 +27,16 @@ The data frames were assigned to variable names along with the columns :
 mean_std is created by subsetting merged_data by extracting the target features: the estmated mean (variable containing "mean" in its label) and estimated standard deviation(variable cotaining "std in its label) and by selecting the columns indicating the subjects ("subject") and the activities ("ActId")
 
 3. Uses descriptive activity names to name the activities in the data set:
-
+Adding to the mean_std a new column with the acitivity labels. This generate the mean_std_ActId data set
 
 4. Appropriately labels the data set with descriptive variable names
+- variables that start with t are changed to Time
+- variables that start with f are changed to Frequency 
+- All Acc in column's name are replaced by Acceleration
+- All Gyro in column's name are replaced by Gyroscope
+- All Mag in columns's name are replaced by Magnitude
+- All .mean and .std are replced by Mean and STD respectivley 
+- Freq that appear at the end of the column's name are replaced by Frequency
+
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+In order to obtain the TidyData, the data are grouped by subject and ActId then each variable is summarized to find the average for the grouped values. TidyData is then exported into TidyData.txt 
