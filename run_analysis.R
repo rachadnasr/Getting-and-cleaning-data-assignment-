@@ -4,7 +4,7 @@ library(dplyr)
 filezip <- "CourseraData.zip"
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 download.file(fileUrl, filezip)
-if(!file.exists("UCI HAR Dataset")) {unzip(filezip)}
+"UCI HAR Dataset" <- unzip(filezip)
 
 #Assigning data frames
 
@@ -50,4 +50,4 @@ names(mean_std_ActId) <- gsub("Freq//.", "Frequency", names(mean_std_ActId))
 
 TidyData <- mean_std_ActId %>% group_by(subject, ActID) %>% summarise_all(funs(mean))
 write.table(tidy_data, "TidyData.txt", row.name=FALSE)
-str(tidy_data)
+
