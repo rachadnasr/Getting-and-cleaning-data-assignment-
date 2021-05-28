@@ -51,3 +51,5 @@ names(mean_std_ActId) <- gsub("Freq//.", "Frequency", names(mean_std_ActId))
 TidyData <- mean_std_ActId %>% group_by(subject, Activity) %>% summarise_all(funs(mean))
 write.table(TidyData, "TidyData.txt", row.name=FALSE)
 
+#To check out the TidyData
+str(TidyData)
