@@ -25,19 +25,19 @@ Different task were executed in order to obtain the final TidyData ready to anal
 
 *1. Merges the training and the test sets to create one data set:
  
-- training data (x_train) and training labels (y_train) are merged with cbind to obtain train_bind
-- train_bind and the training subjects IDs (subject) are merged with cbind to obtain train_bind_subject
-- test data (x_train) and test labels (y_train) are merged with cbind to obtain test_bind
-- test_bind and the test subjects IDs (subject) are merged with cbind to obtain test_bind_subject
-- train_bind_subject and test_bind_subject are merged together with rbind to create one final data set called merged_data
+- training data ("x_train") and training labels ("y_train") are merged with cbind to obtain "train_bind"
+- train_bind and the training subjects IDs ("subject") are merged with cbind to obtain "train_bind_subject"
+- test data (x_train) and test labels ("y_train") are merged with cbind to obtain "test_bind"
+- test_bind and the test subjects IDs ("subject") are merged with cbind to obtain "test_bind_subject"
+- "train_bind_subject" and "test_bind_subject" are merged together with rbind to create one final data set called "merged_data"
 
 *2. Extracts only the measurements on the mean and standard deviation for each measurement:
 
-mean_std is created by subsetting merged_data by extracting the target features: the estmated mean (variable containing "mean" in its label) and estimated standard deviation(variable cotaining "std in its label) and by selecting the columns indicating the subjects ("subject") and the activities ("ActId")
+"mean_std" is created by subsetting "merged_data" by extracting the target features: the estmated mean (variable containing "mean" in its label) and estimated standard deviation (variable cotaining "std in its label) and by selecting the columns indicating the subjects ("subject") and the activities ("ActId"). These two columns "subject" and "ActId" are classed at the right of the data columns.
 
 *3. Uses descriptive activity names to name the activities in the data set:
 
-Adding to the mean_std a new column with the acitivity labels. This generate the mean_std_ActId data set
+Adding to the "mean_std" a new column with the acitivity labels at the right of the data columns. This generate the "mean_std_ActId" data set
 
 *4. Appropriately labels the data set with descriptive variable names
 
@@ -51,4 +51,4 @@ Adding to the mean_std a new column with the acitivity labels. This generate the
 
 *5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-In order to obtain the TidyData, the data are grouped by subject and ActId then each variable is summarized to find the average for the grouped values. TidyData is then exported into TidyData.txt 
+In order to obtain the "TidyData", the data are grouped by "subject" and "ActId" then each variable is summarized to find the average for the grouped values. "TidyData" is then exported into TidyData.txt 
