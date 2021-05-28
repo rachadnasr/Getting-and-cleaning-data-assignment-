@@ -7,7 +7,7 @@ In order to work on the dataset I downloaded and extracted the data under the fo
 The data frames were assigned to variable names along with the columns : 
 
 **The data frames were assigned to variable names along with the columns **
-- features : representing two columns, one for the numbers (numb) and the other for the type of the signals (FUN) obtained from the accelerometer and gyroscope
+- features : representing two columns, one for the numbers ~~~numb~~~ and the other for the type of the signals (FUN) obtained from the accelerometer and gyroscope
 - activitiy_labels: representing two columns one for the activity ID and the other for the labels of the activities performed during the measurments
 -  subject_test: representing 1 column with each row identifies the subject who performed the activity for tests. It contain 9/30 volunteers.
 -  x_train: It contains 561 columns representing recorded features train data
