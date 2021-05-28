@@ -48,6 +48,6 @@ names(mean_std_ActId) <- gsub("Freq//.", "Frequency", names(mean_std_ActId))
 
 #From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-TidyData <- mean_std_ActId %>% group_by(subject, ActID) %>% summarise_all(funs(mean))
-write.table(tidy_data, "TidyData.txt", row.name=FALSE)
+TidyData <- mean_std_ActId %>% group_by(subject, Activity) %>% summarise_all(funs(mean))
+write.table(TidyData, "TidyData.txt", row.name=FALSE)
 
