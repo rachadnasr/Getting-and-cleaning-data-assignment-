@@ -14,14 +14,15 @@ In order to accomplish this assignment several files were submitted in this repo
 
 ## Run_analysis.R: 
 R script that contains the code used for downloading and unzipping the data obtained from the link above and transforming the row data into tidy data following 5 different directions :
-1. Merges the training and the test sets to create one data set.
-2. Extracts only the measurements on the mean and standard deviation for each measurement.
-3. Uses descriptive activity names to name the activities in the data set
-4. Appropriately labels the data set with descriptive activity names.
-5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. Merging the training and the test sets to create one data set.
+2. Extracting only the measurements on the mean and standard deviation for each measurement.
+3. Using descriptive activity names to name the activities in the data set.
+4. Appropriate labeling of the data set with descriptive activity names.
+5. Creating a second, independent tidy data set with the average of each variable for each activity and each subject. And extracting the data into a txt file created with write.table() using row.name=FALSE 
 
 ## TidyData.txt: 
-It contains the tidy data exported into a text file
+It contains the tidy data exported into a text file.
+To read the "TidyData" file in R use: str(TidyData)
 
 ## CodeBook.md: 
-It contains information about the raw and tidy data and the different steps taken to transform the raw data into tidy data
+It contains information about the raw and tidy data and the different steps taken to transform the raw data into tidy data. It contain also information about the different variables.
