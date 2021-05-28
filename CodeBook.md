@@ -2,6 +2,7 @@
 
 Raw data are obtained in UCI Machine Learning Repository with the title : "Human Activity Recognition Using Smartphones Data Set". 
 This project consisted on studying the human activity recognition database built from the recording of 30 subjects performing actitvities daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors. 
+Reference: Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013
 
 **Preparing the data
 
